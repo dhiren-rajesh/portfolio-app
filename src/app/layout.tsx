@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import "./globals.css";
+import Home from "./page";
 
 export const metadata: Metadata = {
   title: "Dhiren's Protfolio",
@@ -9,7 +10,9 @@ export const metadata: Metadata = {
 export default function RootLayout() {
   return (
     <html lang="en">
-      <body>Hello</body>
+      <body>
+        <Home />
+      </body>
     </html>
   );
 }

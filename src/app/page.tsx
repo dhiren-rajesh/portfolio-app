@@ -1,3 +1,10 @@
+"use client";
+import Banner from "../components/Banner";
+
 export default function Home() {
-  return <div>Hello</div>;
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 }
