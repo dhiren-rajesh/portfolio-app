@@ -6,12 +6,12 @@ export default function Banner() {
   const [displayedText, setDisplayedText] = useState<string>("");
   const [index, setIndex] = useState(0);
   const [isTextLoaded, setIsTextLoaded] = useState(false);
-  const message = "Dhiren's Portfolio";
+  const title = "Dhiren's Portfolio";
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (index < message.length) {
-        setDisplayedText((prev) => prev + message[index]);
+      if (index < title.length) {
+        setDisplayedText((prev) => prev + title[index]);
         setIndex(index + 1);
       } else {
         clearInterval(interval);
