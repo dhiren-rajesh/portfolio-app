@@ -35,17 +35,22 @@ export default function Banner() {
         {displayedText}
         {isTextLoaded && (
           <div
-            className="banner-scroll 
-            flex 
+            className="
+            banner-scroll 
+            flex
+            flex-col
+            justify-center 
             items-center 
             absolute 
             left-1/2 
             -translate-x-1/2 
             cursor-pointer 
             opacity-0 
-            animate-delay-1000ms"
+            animate-delay-1000ms
+            "
             onClick={scrollToNextSection}
           >
+            <div className="banner-scroll-text">Scroll Down</div>
             <DownwardArrow fill="#55b555" />
           </div>
         )}
