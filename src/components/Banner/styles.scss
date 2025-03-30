@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
 
 .banner {
-  &-title {
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5rem;
-  }
-
   &-scroll {
     bottom: 5%;
     animation: fadeInUp 1s forwards, bounce 1.5s infinite ease-in-out;

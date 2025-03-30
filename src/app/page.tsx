@@ -1,10 +1,12 @@
 "use client";
-import Banner from "../components/Banner";
+import Introduction from "@/components/Introduction/Introduction";
+import Banner from "../components/Banner/Banner";
 
 export default function Home() {
   return (
-    <div>
+    <div className="max-w-screen">
       <Banner />
+      <Introduction />
     </div>
   );
 }

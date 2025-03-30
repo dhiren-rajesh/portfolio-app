@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./styles.scss";
-import DownwardArrow from "../../public/DownwardArrow";
+import DownwardArrow from "../../../public/DownwardArrow";
 
 export default function Banner() {
   const [displayedText, setDisplayedText] = useState<string>("");
   const [index, setIndex] = useState(0);
   const [isTextLoaded, setIsTextLoaded] = useState(false);
-  const title = "Dhiren's Portfolio";
+  const title = "DHIREN'S PORTFOLIO";
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -22,22 +22,14 @@ export default function Banner() {
     return () => clearInterval(interval);
   }, [index]);
 
-  const scrollToNextSection = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  };
-
   return (
-    <div className="banner-title flex justify-center items-center h-screen w-screen">
-      <div>
-        <div className={"border-2 border-dashed px-[2rem]"}>
-          {displayedText}
-        </div>
-        {isTextLoaded && (
-          <div
-            className="
+    <div className="banner flex justify-center items-center h-screen w-screen">
+      <div className="text-[5rem] border-2 border-dashed px-[2rem]">
+        {displayedText}
+      </div>
+      {isTextLoaded && (
+        <div
+          className="
             banner-scroll 
             flex
             flex-col
@@ -46,17 +38,14 @@ export default function Banner() {
             absolute 
             left-1/2 
             -translate-x-1/2 
-            cursor-pointer 
             opacity-0 
             animate-delay-1000ms
             "
-            onClick={scrollToNextSection}
-          >
-            <div className="banner-scroll-text">Scroll Down</div>
-            <DownwardArrow fill="#55b555" />
-          </div>
-        )}
-      </div>
+        >
+          <div className="banner-scroll-text">SCROLL DOWN</div>
+          <DownwardArrow fill="#000000" />
+        </div>
+      )}
     </div>
   );
 }
