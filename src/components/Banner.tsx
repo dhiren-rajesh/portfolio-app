@@ -32,7 +32,9 @@ export default function Banner() {
   return (
     <div className="banner-title flex justify-center items-center h-screen w-screen">
       <div>
-        {displayedText}
+        <div className={"border-2 border-dashed px-[2rem]"}>
+          {displayedText}
+        </div>
         {isTextLoaded && (
           <div
             className="
