@@ -70,7 +70,8 @@ export default function Introduction() {
       <div className="flex w-1">
         <div className="flex w-1/2 justify-center items-center">
           <img
-            src="https://i.postimg.cc/TwtMPKBp/Ghibli-Style-Art.png"
+            // src="https://i.postimg.cc/TwtMPKBp/Ghibli-Style-Art.png" -> Colored Image
+            src="https://i.postimg.cc/NM9SQd8P/Ghibli-Style-Art.png"
             alt="Profile Pic"
             className="w-[25rem]"
           />
