@@ -23,7 +23,7 @@ export default function Banner() {
   }, [index]);
 
   return (
-    <div className="banner flex justify-center items-center h-screen w-screen">
+    <div className="banner flex justify-center items-center h-screen w-[100%]">
       <div className="text-[5rem] border-2 border-dashed px-[2rem]">
         {displayedText}
       </div>

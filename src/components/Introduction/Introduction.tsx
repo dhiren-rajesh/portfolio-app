@@ -13,7 +13,7 @@ export default function Introduction() {
     {
       question: "Who Am I?",
       answer:
-        "Hi I'm Dhiren. I'm a Software Engineer based out of Bengaluru, India.",
+        "Hi I'm Dhiren, a Software Engineer based out of Bengaluru, India.",
     },
     {
       question: "What Am I?",
@@ -29,11 +29,6 @@ export default function Introduction() {
       question: "Am I good at what I do?",
       answer:
         "I think I fare pretty well. Yeah, that's about it. I don't know what exactly you were expecting.",
-    },
-    {
-      question: "Do I enjoy what I do?",
-      answer:
-        "Yes, a 100%. We all have our ups and downs but that doesn't mean you stop enjoying what you do.",
     },
     {
       question: "What do I like besides code?",
@@ -61,7 +56,7 @@ export default function Introduction() {
 
   return (
     <div
-      className="intro-fade introduction flex flex-col h-screen w-screen"
+      className="intro-fade introduction flex flex-col h-screen w-[100%]"
       style={{ opacity }}
     >
       <div className="flex justify-center items-center text-[3rem]">
