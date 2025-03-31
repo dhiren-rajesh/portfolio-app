@@ -42,7 +42,6 @@ export default function Banner() {
             animate-delay-1000ms
             "
         >
-          <div className="banner-scroll-text">SCROLL DOWN</div>
           <DownwardArrow fill="#000000" />
         </div>
       )}

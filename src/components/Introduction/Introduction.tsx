@@ -56,13 +56,13 @@ export default function Introduction() {
 
   return (
     <div
-      className="intro-fade introduction flex flex-col h-screen w-[100%]"
+      className="intro-fade introduction flex flex-col w-full h-[90vh] pt-[10vh]"
       style={{ opacity }}
     >
       <div className="flex justify-center items-center text-[3rem]">
-        <div className="border-b-2 border-dashed px-[1rem]">About</div>
+        <div className="border-b-2 border-dashed px-[1rem]">About Me</div>
       </div>
-      <div className="flex w-1">
+      <div className="flex w-full h-full">
         <div className="flex w-1/2 justify-center items-center">
           <img
             // src="https://i.postimg.cc/TwtMPKBp/Ghibli-Style-Art.png" -> Colored Image
